@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java基础," />
 
 
 
@@ -81,13 +81,15 @@
 
 
 
-<meta name="description" content="好记性不如烂键盘">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LC的个人博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;categories&#x2F;MarkDown&#x2F;index.html">
+<meta name="description" content="HashMap的底层实现原理jdk  71HashMap hashmap &#x3D; new HashMap&amp;lt;&amp;gt;();  在实例化以后，底层创建了一个长度为16的一维数组 Entry[] table。 ….可能已经执行过多次put 1hashmap.put(key1,value1);  ​    首先，调用key1所在类的hashCode()方法计算key1的哈希值，此哈希值经过某种算法（&amp;a">
+<meta name="keywords" content="java基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HashMap">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;30&#x2F;HashMap&#x2F;index.html">
 <meta property="og:site_name" content="LC的个人博客">
-<meta property="og:description" content="好记性不如烂键盘">
+<meta property="og:description" content="HashMap的底层实现原理jdk  71HashMap hashmap &#x3D; new HashMap&amp;lt;&amp;gt;();  在实例化以后，底层创建了一个长度为16的一维数组 Entry[] table。 ….可能已经执行过多次put 1hashmap.put(key1,value1);  ​    首先，调用key1所在类的hashCode()方法计算key1的哈希值，此哈希值经过某种算法（&amp;a">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-12-30T09:16:50.082Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/MarkDown/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/12/30/HashMap/"/>
 
 
 
 
 
-  <title>分类: MarkDown | LC的个人博客</title>
+  <title>HashMap | LC的个人博客</title>
   
 
 
@@ -153,7 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,55 +259,272 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>MarkDown<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/30/HashMap/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LC">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head_portrait.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LC的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/12/14/Markdown%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" itemprop="url">
-              
-                <span itemprop="name">Markdown快速入门</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">HashMap</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-12-14T19:28:51+08:00"
-              content="2019-12-14" >
-          12-14
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-30T17:15:51+08:00">
+                2019-12-30
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-12-30T17:16:50+08:00">
+                2019-12-30
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index">
+                    <span itemprop="name">java基础</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/30/HashMap/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/30/HashMap/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/12/30/HashMap/" class="leancloud_visitors" data-flag-title="HashMap">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  500
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="HashMap的底层实现原理"><a href="#HashMap的底层实现原理" class="headerlink" title="HashMap的底层实现原理"></a>HashMap的底层实现原理</h1><h2 id="jdk-7"><a href="#jdk-7" class="headerlink" title="jdk  7"></a>jdk  7</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">HashMap hashmap = <span class="keyword">new</span> HashMap&lt;&gt;();</span></pre></td></tr></table></figure>
+
+<p>在实例化以后，底层创建了一个长度为16的一维数组 Entry[] table。</p>
+<p>….可能已经执行过多次put</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hashmap.put(key1,value1);</span></pre></td></tr></table></figure>
+
+<p>​    首先，调用key1所在类的hashCode()方法计算key1的哈希值，此哈希值经过某种算法（&amp;计算，比取模%效率高）计算后，得到在Entry数组中的存放位置。</p>
+<p>​    如果此位置上的数据为空，则key1-value1添加成功          <strong>———情况1</strong></p>
+<p>​    如果此位置上的数据不为空，（意味着此位置上存在一个或者多个数据（以链表形式存在）），比较key1和已经存在的一个或者多个数据的哈希值：</p>
+<p>​            如果key1的哈希值与已经存在的数据的哈希值都不相同，此时key1-value1添加成功     <strong>———情况2</strong></p>
+<p>​            如果key1的哈希值与已存在的某一个数据（key2-value2）的哈希值相同，继续比较 ： </p>
+<p>​                    调用key1所在的类的equals（key2） </p>
+<p>​                    如果equel()返回false，此时key1-value1添加成功              <strong>———情况3</strong></p>
+<p>​                    如果equel()返回ture, 使用value2替换value1</p>
+<p><strong>补充</strong>：关于情况2和情况3：此时key1-value1和原来的数据以链表的形式存在。</p>
+<p>在不断的添加过程中，会涉及到扩容问题，默认的扩容方式：扩容为原来的2倍，并将之前的数据拷贝过来</p>
+<h2 id="jdk-8"><a href="#jdk-8" class="headerlink" title="jdk  8"></a>jdk  8</h2><p>相比于jdk7在底层实现方面不同 ：</p>
+<p>1、new HashMap()时底层没有直接初始化一个长度16的数组</p>
+<p>2、jdk8的 底层的数组是： Node[ ] ，  而非Entry[ ]</p>
+<p>3、首次调用put()方法时，底层创建16长度的数组</p>
+<p>4、jdk7底层结构只有：数组+链表 ，jdk8中的数据结构：数组+链表+红黑树</p>
+<p>​            当数组的某一个索引位置上的元素以链表形式   8 &lt;  存在的数据个数 &lt; 64 时，此时此索引位置上的所有数据改为        使用红黑树存储</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    LC
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2019/12/30/HashMap/" title="HashMap">http://yoursite.com/2019/12/30/HashMap/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag"># java基础</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/16/%E5%BC%95%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" rel="next" title="引入本地图片">
+                <i class="fa fa-chevron-left"></i> 引入本地图片
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -313,6 +532,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -333,8 +559,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -427,6 +662,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HashMap的底层实现原理"><span class="nav-number">1.</span> <span class="nav-text">HashMap的底层实现原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#jdk-7"><span class="nav-number">1.1.</span> <span class="nav-text">jdk  7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jdk-8"><span class="nav-number">1.2.</span> <span class="nav-text">jdk  8</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -603,6 +854,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

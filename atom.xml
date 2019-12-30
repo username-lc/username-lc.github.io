@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-12-17T08:50:42.455Z</updated>
+  <updated>2019-12-30T09:16:50.082Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HashMap</title>
+    <link href="http://yoursite.com/2019/12/30/HashMap/"/>
+    <id>http://yoursite.com/2019/12/30/HashMap/</id>
+    <published>2019-12-30T09:15:51.000Z</published>
+    <updated>2019-12-30T09:16:50.082Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HashMap的底层实现原理"><a href="#HashMap的底层实现原理" class="headerlink" title="HashMap的底层实现原理"></a>HashMap的底层实现原理</h1><h2 id="jdk-7"><a href="#jdk-7" class="headerlink" title="jdk  7"></a>jdk  7</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">HashMap hashmap = <span class="keyword">new</span> HashMap&lt;&gt;();</span></pre></td></tr></table></figure><p>在实例化以后，底层创建了一个长度为16的一维数组 Entry[] table。</p><p>….可能已经执行过多次put</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">hashmap.put(key1,value1);</span></pre></td></tr></table></figure><p>​    首先，调用key1所在类的hashCode()方法计算key1的哈希值，此哈希值经过某种算法（&amp;计算，比取模%效率高）计算后，得到在Entry数组中的存放位置。</p><p>​    如果此位置上的数据为空，则key1-value1添加成功          <strong>———情况1</strong></p><p>​    如果此位置上的数据不为空，（意味着此位置上存在一个或者多个数据（以链表形式存在）），比较key1和已经存在的一个或者多个数据的哈希值：</p><p>​            如果key1的哈希值与已经存在的数据的哈希值都不相同，此时key1-value1添加成功     <strong>———情况2</strong></p><p>​            如果key1的哈希值与已存在的某一个数据（key2-value2）的哈希值相同，继续比较 ： </p><p>​                    调用key1所在的类的equals（key2） </p><p>​                    如果equel()返回false，此时key1-value1添加成功              <strong>———情况3</strong></p><p>​                    如果equel()返回ture, 使用value2替换value1</p><p><strong>补充</strong>：关于情况2和情况3：此时key1-value1和原来的数据以链表的形式存在。</p><p>在不断的添加过程中，会涉及到扩容问题，默认的扩容方式：扩容为原来的2倍，并将之前的数据拷贝过来</p><h2 id="jdk-8"><a href="#jdk-8" class="headerlink" title="jdk  8"></a>jdk  8</h2><p>相比于jdk7在底层实现方面不同 ：</p><p>1、new HashMap()时底层没有直接初始化一个长度16的数组</p><p>2、jdk8的 底层的数组是： Node[ ] ，  而非Entry[ ]</p><p>3、首次调用put()方法时，底层创建16长度的数组</p><p>4、jdk7底层结构只有：数组+链表 ，jdk8中的数据结构：数组+链表+红黑树</p><p>​            当数组的某一个索引位置上的元素以链表形式   8 &lt;  存在的数据个数 &lt; 64 时，此时此索引位置上的所有数据改为        使用红黑树存储</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;HashMap的底层实现原理&quot;&gt;&lt;a href=&quot;#HashMap的底层实现原理&quot; class=&quot;headerlink&quot; title=&quot;HashMap的底层实现原理&quot;&gt;&lt;/a&gt;HashMap的底层实现原理&lt;/h1&gt;&lt;h2 id=&quot;jdk-7&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+      <category term="java基础" scheme="http://yoursite.com/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java基础" scheme="http://yoursite.com/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>引入本地图片</title>
